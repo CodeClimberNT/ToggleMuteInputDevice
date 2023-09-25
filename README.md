@@ -9,6 +9,6 @@ The important stuff are:
   3. By selecting from the program itself
     * Note: Those are the order of importance I decided matter, if you pass an argument the file will be ignored. If the method used to search for the device doens't find it, it will prompt to choose from you're current active ones
 * No other stuff
-* Really, it's a simple program you can check it out yourself, it's just a single file that do all the work.
+* Really, It's a simple program, you can check it out yourself. It's just a single file that do all the work.
 
 I may return to it in the future if I find myself in need to make some adjustment but for now it work as I intend.
