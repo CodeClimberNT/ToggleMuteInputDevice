@@ -30,6 +30,7 @@ class Program
             {
                 // Read the device name from user input
                 targetDeviceName = ChooseDeviceFromList(inputDevices);
+                AskAndSaveDeviceNameToFile(targetDeviceName, deviceNameFilePath);
             }
         }
 
@@ -39,6 +40,7 @@ class Program
         if (deviceIndex == -1 && isReadFromFile)
         {
             targetDeviceName = ChooseDeviceFromList(inputDevices);
+            AskAndSaveDeviceNameToFile(targetDeviceName, deviceNameFilePath);
             deviceIndex = FindIndexDeviceByName(targetDeviceName, inputDevices);
 
             if (deviceIndex == -1)
@@ -58,15 +60,9 @@ class Program
         bool isDeviceMuted = !targetDevice.AudioEndpointVolume.Mute;
         targetDevice.AudioEndpointVolume.Mute = isDeviceMuted;
 
-        string deviceState;
-        if (isDeviceMuted)
-        {
-            deviceState = "Disable";
-        }
-        else
-        {
-            deviceState = "Enabled";
-        }
+
+        string deviceState = isDeviceMuted ? "Disable" : "Enabled";
+
         Console.WriteLine($"'{targetDeviceName}' changed to {deviceState}.");
         Console.WriteLine($"Press any Key to exit...");
         try
@@ -80,6 +76,8 @@ class Program
         }
         return;
     }
+
+
 
     private static int FindIndexDeviceByName(string targetDeviceName, MMDeviceCollection devices)
     {
@@ -130,5 +128,17 @@ class Program
         Console.WriteLine("Invalid device number.");
         Environment.Exit(1);
         return null;
+    }
+
+    private static void AskAndSaveDeviceNameToFile(string deviceName, string pathToFile)
+    {
+        Console.Write("Do you want to save this device as the default? (y/N) ");
+
+        string? response = Console.ReadLine();
+        if (response != null && response.Trim().ToLower() == "y")
+        {
+            File.WriteAllText(pathToFile, deviceName);
+            Console.WriteLine($"Device '{deviceName}' saved as the default.");
+        }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj": {}
+    "C:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj": {
+    "C:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj",
+        "projectUniqueName": "C:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj",
         "projectName": "ToggleMuteInputDevice",
-        "projectPath": "c:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj",
+        "projectPath": "C:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\ToggleMuteInputDevice.csproj",
         "packagesPath": "C:\\Users\\nickt\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\obj\\",
+        "outputPath": "C:\\Users\\nickt\\dev\\C#\\Toggle Mute Device\\ToggleMuteInputDevice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nickt\\AppData\\Roaming\\NuGet\\NuGet.Config"
