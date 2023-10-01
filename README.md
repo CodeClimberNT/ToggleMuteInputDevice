@@ -5,7 +5,7 @@ Feel free to use it as you like.
 
 # How To Use It
 There are two ways to run the program:
- 1. Go to the release page and download the package
+ 1. Go to the release page and download the package (It's in beta because I don't trust myself, but untill now it worked flawlessly)
  2. Download/Clone the repository and build it yourself
     
 If you want an easy quick way i suggest to download the release, instead, if you are concerned about the content of the exe file, run the program from the second option.
